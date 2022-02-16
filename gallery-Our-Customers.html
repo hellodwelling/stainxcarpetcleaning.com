@@ -85,17 +85,17 @@
     <!-- for desktop -->
     <div class="hidden lg:group-hover:opacity-100 lg:opacity-0 transition duration-500 ease-in-out lg:flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
         
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Cleaning-Services"> Cleaning Services </a>
-        
             <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Our-Customers"> Our Customers </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Cleaning-Services"> Cleaning Services </a>
         
     </div> 
     <!-- for mobile b/c can't enable tailwind variants w/o postcss build -->
     <div id='mobile-dropdown' class="lg:hidden hidden transition duration-500 ease-in-out flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
         
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Cleaning-Services"> Cleaning Services </a>
-        
             <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Our-Customers"> Our Customers </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Cleaning-Services"> Cleaning Services </a>
         
     </div> 
 
@@ -161,9 +161,6 @@
         
         
             
-        
-        
-            
                 
     
     
@@ -221,38 +218,42 @@
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
             <h2  style= "color:#000000" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Customers</h2>
             <h2  style= "color:#0101fe" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">Our Best Work</h2>
-            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/df80e035-08da-49e0-8058-606dc829c5d4.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/KD91J0V1X7HKJF2O2MAD3V1NGBVLCTRVIMUQFP7D.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/KIJ8EQLFNC6CYXUUCH9K51B5EVNTAF4DVN73RK5J.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/NHU0IEYSZDAKJMMIZUXS6T43WX3UEE2CG2G98JNV.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/Q0VCB38EOVZJGJZYI3TTITQ1Z9RF8XJ2LJDF8UPE.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/PHGHNJKJ31FNL1GJHHL73NB8P10CWW9AFVW7EUWA.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/VBCJ8ZBFIOMBK5D0IGI9DX8CYW80O042I870E28G.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/FPNDD5N8XLLQIFF5OA5BMBZF6TNSDNX4EOTOQ3YO.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/KD91J0V1X7HKJF2O2MAD3V1NGBVLCTRVIMUQFP7D.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/KIJ8EQLFNC6CYXUUCH9K51B5EVNTAF4DVN73RK5J.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/NHU0IEYSZDAKJMMIZUXS6T43WX3UEE2CG2G98JNV.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/Q0VCB38EOVZJGJZYI3TTITQ1Z9RF8XJ2LJDF8UPE.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/PHGHNJKJ31FNL1GJHHL73NB8P10CWW9AFVW7EUWA.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/VBCJ8ZBFIOMBK5D0IGI9DX8CYW80O042I870E28G.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/FPNDD5N8XLLQIFF5OA5BMBZF6TNSDNX4EOTOQ3YO.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+                <!-- <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/KD91J0V1X7HKJF2O2MAD3V1NGBVLCTRVIMUQFP7D.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/KIJ8EQLFNC6CYXUUCH9K51B5EVNTAF4DVN73RK5J.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/NHU0IEYSZDAKJMMIZUXS6T43WX3UEE2CG2G98JNV.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/Q0VCB38EOVZJGJZYI3TTITQ1Z9RF8XJ2LJDF8UPE.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/PHGHNJKJ31FNL1GJHHL73NB8P10CWW9AFVW7EUWA.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/VBCJ8ZBFIOMBK5D0IGI9DX8CYW80O042I870E28G.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/FPNDD5N8XLLQIFF5OA5BMBZF6TNSDNX4EOTOQ3YO.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   > -->
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/df80e035-08da-49e0-8058-606dc829c5d4.png"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/KD91J0V1X7HKJF2O2MAD3V1NGBVLCTRVIMUQFP7D.jpeg"  alt = "Photo number 28 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/KD91J0V1X7HKJF2O2MAD3V1NGBVLCTRVIMUQFP7D.jpeg"  alt = "Photo number 28 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/KD91J0V1X7HKJF2O2MAD3V1NGBVLCTRVIMUQFP7D.jpeg"  alt = "Photo number 28 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/KIJ8EQLFNC6CYXUUCH9K51B5EVNTAF4DVN73RK5J.jpeg"  alt = "Photo number 29 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/KIJ8EQLFNC6CYXUUCH9K51B5EVNTAF4DVN73RK5J.jpeg"  alt = "Photo number 29 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/KIJ8EQLFNC6CYXUUCH9K51B5EVNTAF4DVN73RK5J.jpeg"  alt = "Photo number 29 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/NHU0IEYSZDAKJMMIZUXS6T43WX3UEE2CG2G98JNV.jpeg"  alt = "Photo number 30 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/NHU0IEYSZDAKJMMIZUXS6T43WX3UEE2CG2G98JNV.jpeg"  alt = "Photo number 30 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/NHU0IEYSZDAKJMMIZUXS6T43WX3UEE2CG2G98JNV.jpeg"  alt = "Photo number 30 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/Q0VCB38EOVZJGJZYI3TTITQ1Z9RF8XJ2LJDF8UPE.jpeg"  alt = "Photo number 31 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/Q0VCB38EOVZJGJZYI3TTITQ1Z9RF8XJ2LJDF8UPE.jpeg"  alt = "Photo number 31 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/Q0VCB38EOVZJGJZYI3TTITQ1Z9RF8XJ2LJDF8UPE.jpeg"  alt = "Photo number 31 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/PHGHNJKJ31FNL1GJHHL73NB8P10CWW9AFVW7EUWA.jpeg"  alt = "Photo number 32 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/PHGHNJKJ31FNL1GJHHL73NB8P10CWW9AFVW7EUWA.jpeg"  alt = "Photo number 32 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/PHGHNJKJ31FNL1GJHHL73NB8P10CWW9AFVW7EUWA.jpeg"  alt = "Photo number 32 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/VBCJ8ZBFIOMBK5D0IGI9DX8CYW80O042I870E28G.jpeg"  alt = "Photo number 33 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/VBCJ8ZBFIOMBK5D0IGI9DX8CYW80O042I870E28G.jpeg"  alt = "Photo number 33 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/VBCJ8ZBFIOMBK5D0IGI9DX8CYW80O042I870E28G.jpeg"  alt = "Photo number 33 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
-                    
-                                    
-                        
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/FPNDD5N8XLLQIFF5OA5BMBZF6TNSDNX4EOTOQ3YO.jpeg"  alt = "Photo number 34 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/FPNDD5N8XLLQIFF5OA5BMBZF6TNSDNX4EOTOQ3YO.jpeg"  alt = "Photo number 34 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <!-- <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/FPNDD5N8XLLQIFF5OA5BMBZF6TNSDNX4EOTOQ3YO.jpeg"  alt = "Photo number 34 of Stain X Carpet Cleaning&#x27;s best work performing a null job"   loading="lazy" ></div> -->
                     
                  
                                     
@@ -334,6 +335,9 @@
 
             
 </div>
+            
+        
+        
             
         
     
