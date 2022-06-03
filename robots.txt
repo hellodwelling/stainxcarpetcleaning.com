@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: 
-Sitemap: https://stainxcarpetcleaning.com/sitemap.xml
